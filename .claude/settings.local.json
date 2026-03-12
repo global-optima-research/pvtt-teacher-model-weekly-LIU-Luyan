@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"D:\\\\Learning_file\\\\master&PhD\\\\master\\\\HKUST\\\\毕设\\\\IP-2026-spring\\\\pvtt-teacher-model-weekly-LIU-Luyan\")",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=10 liuluyan@111.17.197.107 \"echo 'SSH connection successful' && hostname\")",
+      "Bash(ls \"D:/Learning_file/master&PhD/master/HKUST/毕设/IP-2026-spring/pvtt-teacher-model-weekly-LIU-Luyan/\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"cat /data/liuluyan/VideoPainter/infer/inpaint.py\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"find /data/liuluyan/ -maxdepth 3 -type d -name '*result*' -o -type d -name '*visual*' -o -type d -name '*fig*' -o -type d -name '*image*' -o -type d -name '*plot*' -o -type d -name '*output*' 2>/dev/null | head -50\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"cat /data/liuluyan/VideoPainter/infer/inpaint.sh\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"cat /data/liuluyan/VideoPainter/run_demo.py\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"find /data/liuluyan/ -maxdepth 4 -type f \\\\\\( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' \\\\\\) ! -path '*/miniconda3/*' ! -path '*/Grounded-SAM-2/*' ! -path '*__pycache__*' 2>/dev/null | head -80\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"find /data/liuluyan/VideoPainter/ -maxdepth 1 -name '*.sh' -o -name '*.py' | head -10\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"find /data/liuluyan/VideoPainter/ -name '*dataset100*' -o -name '*demo*' | grep -v __pycache__ | head -20\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"find /data/liuluyan/ -maxdepth 4 -type d -name '*visual*' -o -type d -name '*overlay*' -o -type d -name '*comparison*' -o -type d -name '*demo*' -o -type d -name '*fig*' -o -type d -name '*plot*' -o -type d -name '*week*' 2>/dev/null | grep -v miniconda3 | grep -v __pycache__\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"which conda 2>/dev/null || echo 'not found'; source ~/.bashrc 2>/dev/null && which conda 2>/dev/null || echo 'still not found'; ls /data/liuluyan/miniconda*/bin/conda /data/liuluyan/anaconda*/bin/conda /opt/conda/bin/conda 2>/dev/null || echo 'no conda found in common paths'\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"cd /data/liuluyan && source miniconda3/bin/activate lly311 && python /data/liuluyan/repo/gen_vis.py\")",
+      "Bash(/usr/bin/env bash:*)",
+      "Bash(scp liuluyan@111.17.197.107:/data/liuluyan/VideoPainter/dataset100results/video_handfan1/result_frame_mid.png \"D:/Learning_file/master&PhD/master/HKUST/毕设/IP-2026-spring/pvtt-teacher-model-weekly-LIU-Luyan/VideoPainter/dataset100_results/video_handfan1/result_frame_mid.png\")",
+      "Bash(scp liuluyan@111.17.197.107:/data/liuluyan/VideoPainter/dataset100results/image_handbag1/result_frame_mid.png \"D:/Learning_file/master&PhD/master/HKUST/毕设/IP-2026-spring/pvtt-teacher-model-weekly-LIU-Luyan/VideoPainter/dataset100_results/image_handbag1/result_frame_mid.png\")",
+      "Bash(dir \"D:\\\\Learning_file\\\\master&PhD\\\\master\\\\HKUST\\\\毕设\\\\IP-2026-spring\\\\pvtt-teacher-model-weekly-LIU-Luyan\")",
+      "Bash(scp -r liuluyan@111.17.197.107:/data/liuluyan/repo/images/ \"D:/Learning_file/master&PhD/master/HKUST/毕设/IP-2026-spring/pvtt-teacher-model-weekly-LIU-Luyan/images/\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"find /data/liuluyan/VideoPainter/diffusers/ -name '*inpaint*' -o -name '*dual*' | grep -v __pycache__ | head -20\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"find /data/liuluyan/VideoPainter/diffusers/ -name '*dual*inpaint*' -o -name '*i2v*dual*' | grep -v __pycache__\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"grep -rl 'CogVideoXI2VDualInpaintAnyLPipeline' /data/liuluyan/VideoPainter/diffusers/ --include='*.py' | grep -v __pycache__\")",
+      "Bash(ssh liuluyan@111.17.197.107 \"cat /data/liuluyan/VideoPainter/diffusers/src/diffusers/pipelines/cogvideo/pipeline_cogvideox_inpainting_i2v_branch_anyl.py\")",
+      "Bash(scp \"D:/Learning_file/master&PhD/master/HKUST/毕设/IP-2026-spring/pvtt-teacher-model-weekly-LIU-Luyan/week4_report.md\" liuluyan@111.17.197.107:/data/liuluyan/repo/week4_report.md)"
+    ]
+  }
+}

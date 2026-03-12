@@ -99,18 +99,26 @@
 - SAM2 的 Hiera backbone 对快速运动的跟踪能力更强
 - XMem/DEVA 在快速旋转时容易丢失目标边缘
 
+![breakdance comparison](images/breakdance_comparison.png)
+
 **Case 2: `loading` (SAM2: 0.973 vs Cutie: 0.888, Δ=0.085)**
 - 场景中存在物体遮挡和重新出现
 - SAM2 能更好地在遮挡后恢复跟踪
 - Cutie 在遮挡后的 mask 精度下降明显
 
+![loading comparison](images/loading_comparison.png)
+
 **Case 3: `dance-twirl` (SAM2: 0.958 vs Cutie: 0.904, Δ=0.054)**
 - 旋转导致目标外观变化大
 - SAM2 对外观变化的适应能力更强
 
+![dance-twirl comparison](images/dance-twirl_comparison.png)
+
 **Case 4: `motocross-jump` (SAM2: 0.919 vs XMem: 0.815, Δ=0.104)**
 - 所有模型中差异最大的视频之一
 - 快速运动 + 多目标 + 遮挡，SAM2 明显优于传统 VOS 模型
+
+![motocross-jump comparison](images/motocross-jump_comparison.png)
 
 ### 4.2 所有模型均表现不佳的 Case
 
@@ -119,19 +127,27 @@
 - 远距离小目标 + 复杂背景
 - 提示：对于此类场景可能需要更强的提示策略或多尺度分割
 
+![paragliding-launch comparison](images/paragliding-launch_comparison.png)
+
 **Case: `lab-coat` (最高仅 0.695, XMem)**
 - 有趣的是，XMem 在此视频上反而略优于 SAM2
 - 可能涉及白色物体在白色背景下的分割困难
 
+![lab-coat comparison](images/lab-coat_comparison.png)
+
 **Case: `kite-surf` (最高仅 0.724, SAM2)**
 - 远距离小目标 + 海面反光
 - 所有模型均受到小目标检测的挑战
+
+![kite-surf comparison](images/kite-surf_comparison.png)
 
 ### 4.3 其他模型偶尔优于 SAM2 的 Case
 
 - **`blackswan`**: XMem (0.981) > SAM2 (0.970) — 简单场景下传统 VOS 模型足够准确
 - **`car-roundabout`**: XMem (0.984) > SAM2 (0.975) — 稳定运动的场景
 - **`cows` / `libby` / `pigs`**: Cutie 略优于 SAM2 — 中等复杂度场景中 Cutie 的对象级记忆策略有效
+
+![blackswan comparison](images/blackswan_comparison.png)
 
 ---
 
