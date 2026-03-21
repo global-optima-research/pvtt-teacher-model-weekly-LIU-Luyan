@@ -9,7 +9,7 @@
 | **机构** | Meta AI (FAIR) |
 | **代码** | [github.com/facebookresearch/sam2](https://github.com/facebookresearch/sam2) |
 
-#### 完整架构
+####  完整架构
 
 **图像编码器**:
 - MAE预训练的Hiera分层架构
