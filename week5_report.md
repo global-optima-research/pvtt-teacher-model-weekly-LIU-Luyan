@@ -117,7 +117,7 @@
 | DEVA | 65.9 | 84.5 | 75.2 | 55.2 |
 | XMem | 63.8 | 85.6 | 74.7 | 53.9 |
 
-![bmx-trees 中间帧对比](davis2017_comparison/bmx-trees_frame00040.png)
+![bmx-trees 中间帧对比](davis2017_comparison/bmx-trees_frame00021.png)
 
 **分析**: TC 仅约 55%，说明遮挡导致 mask 剧烈变化。GSAM2/SAM2 的 J 值领先约 4 个点，其遮挡预测头（occlusion prediction head）在目标被树干遮挡后能更好地恢复分割。但 F 值差距更大（89.5 vs 84.5），说明 SAM2 在重新出现时的边界恢复更准确。
 
