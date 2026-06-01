@@ -1,0 +1,72 @@
+封面 / Title Page
+├── 1. Introduction (1-1.5 页)
+│   ├── 1.1 Background (电商视频编辑场景痛点)
+│   ├── 1.2 Problem Statement (Mask Bleeding 等核心问题)
+│   ├── 1.3 Objectives & Contributions (你提的3个模块 = 3条 contribution)
+│   └── 1.4 Report Structure
+│
+├── 2. Related Work (2-3 页) ⭐ 文献调研产出
+│   ├── 2.1 Memory-based VOS (XMem, Cutie)
+│   ├── 2.2 Foundation Models for VOS (SAM 2, SAM 3)
+│   ├── 2.3 VLM-aided Segmentation (SeC, LISA)
+│   └── 2.4 Summary & Gap (用一个表格对比已有方法的优缺点) ⭐
+│
+├── 3. Methodology (3-5 页) ⭐ 你方法的核心
+│   ├── 3.1 Overall Framework (放 Pipeline 图) ⭐
+│   ├── 3.2 VLM-based Prior Routing
+│   ├── 3.3 Lightweight Dynamic Change Evaluator
+│   ├── 3.4 Adaptive Sampling & Segmentation Engine
+│   └── 3.5 (可选) Formulation / Notation
+│
+├── 4. Preliminary Experiments (4-6 页) ⭐ Achievement Evidence
+│   ├── 4.1 Datasets (说明你用什么数据：DAVIS, YouTube-VOS, 自建电商数据)
+│   ├── 4.2 Evaluation Metrics (J, F, J&F, mIoU, FPS)
+│   ├── 4.3 Implementation Details
+│   ├── 4.4 Baseline Comparison (XMem / SAM2 / SAM3 / Cutie / SeC) ⭐ 表格
+│   ├── 4.5 Qualitative Results (放可视化图，特别是 Mask Bleeding 案例) ⭐
+│   └── 4.6 Analysis (从结果反推为什么需要你的方法)
+│
+├── 5. Progress & Deliverables Update (0.5-1 页)
+│   ├── Completed Tasks (打钩列表)
+│   └── Deliverables Status
+│
+├── 6. Challenges & Plan for Next Phase (1 页)
+│   ├── 6.1 Current Challenges
+│   ├── 6.2 Plan for June - July (甘特图最好) ⭐
+│   └── 6.3 Risk & Mitigation
+│
+├── 7. Conclusion (0.3 页)
+│
+├── References (≥ 20 篇)
+│
+└── Appendix: Meeting Minutes (≥ 2 次会议纪要，按 PDF 给的模板写)
+
+
+我的文件目录结构管理：
+project_root/
+├── data/
+│   └── ecommerce_videos/         # 原始视频
+│       ├── case_01_handheld/
+│       ├── case_02_static/
+│       └── ...
+├── results/
+│   ├── sam2/
+│   │   ├── case_01/
+│   │   │   ├── frame_0000.png   # 原图
+│   │   │   ├── mask_0000.png    # 输出mask
+│   │   │   ├── overlay_0000.png # mask叠加图
+│   │   │   └── metrics.json     # 该case的J&F等指标
+│   ├── sam3/
+│   ├── cutie/
+│   └── xmem/
+├── analysis/
+│   ├── comparison_table.csv     # 主对比表
+│   ├── failure_cases/           # 精选的失败可视化
+│   └── vlm_routing/
+│       ├── prompts.txt
+│       └── routing_acc.csv
+└── figures_for_report/          # 报告里要用的最终图
+    ├── pipeline.pdf             # 你的方法框架图
+    ├── failure_case_grid.png    # 4x4 失败案例对比图
+    ├── results_bar_chart.pdf
+    └── timeline_gantt.pdf
