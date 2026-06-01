@@ -13,9 +13,9 @@
 
 **电商视频端到端目标分割（End-to-End Video Object Segmentation, VOS）**。
 
-本课题的任务边界是：给定电商商品视频（及可选的文本/点框提示），**端到端输出与输入逐帧对齐的 mask 序列（mask 视频）**；不涉及下游的物品修改、替换或 inpainting 等编辑操作。Agent 在此处的角色是 **分割流程编排与多模型路由**，而非视频编辑 Agent。
+本课题的核心任务是：给定电商商品视频（及可选的文本提示），**端到端输出与输入逐帧对齐的 mask 序列（mask 视频）**；不涉及下游的物品修改、替换或 inpainting 等编辑操作。Agent 在此处的角色是 **分割流程编排与多模型路由**。
 
-本周重点完成 **SAM3 文本驱动分割** 在 PVTT 电商评测集上的全量复现，并将其与前期在 DAVIS 2017 上测试的四个经典 VOS 模型（SAM2/GSAM2、Cutie、DEVA、XMem）进行横向对比，为后续分割路由 Agent 的 **模型选择策略** 提供实证依据。
+本周重点完成 **SAM3 文本驱动分割** 在 PVTT 电商评测集上的复现，并将其与前期在 DAVIS 2017 上测试的四个经典 VOS 模型（SAM2/GSAM2、Cutie、DEVA、XMem）进行横向对比，为后续分割路由 Agent 的 **模型选择策略** 提供参考依据。
 
 
 SAM3 复现用的 PVTT 评测数据集在服务器的路径是：
@@ -86,14 +86,14 @@ SAM3 复现用的 PVTT 评测数据集在服务器的路径是：
 | IoU ≥ 0.7 占比（采样帧） | **53.4%**               |
 | IoU ≥ 0.9 占比（采样帧） | 27.1%                   |
 
-
+<!-- 
 **SAM3 IoU 分布SAM3 按品类 Mean IoUSAM3 按 scene 标签 IoU 对比**
 
 ![SAM3 IoU 分布](../sam3/report_figures/sam3_iou_hist.png)
 
 ![SAM3 按品类 Mean IoU](../sam3/report_figures/sam3_category_bar.png)
 
-![SAM3 按 scene 标签 IoU 对比](../sam3/report_figures/sam3_shot_box.png)
+![SAM3 按 scene 标签 IoU 对比](../sam3/report_figures/sam3_shot_box.png) -->
 
 ### 4.2 INFER_NO_MASK 失败帧排查（23 帧 → 4 个视频）
 
