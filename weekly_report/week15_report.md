@@ -204,11 +204,14 @@ SAM3 复现用的 PVTT 评测数据集在服务器的路径是：
 
 ![SAM3 定性结果：高/中/低/失败四案例](../sam3/report_figures/sam3_qualitative.png)
 
+**关于 "low" 与 "failure" 标签的说明。** 图中 (c) 标注为 "low"、(d) 标注为 "failure"，二者描述的并非同一维度：**"low" 是帧级别（frame-level）描述**，指**该单帧的 IoU 数值偏低**（此处为 0.061）；**"failure" 是品类级别（category-level）描述**，指**该案例所属的品类（Earring）整体属于 SAM3 的失败品类**（Earring 品类 Mean IoU 仅 0.237，为 9 个品类中最差）。因此，"failure" 案例的单帧 IoU（0.364）反而高于 "low" 案例（0.061），这并非矛盾，而是两种粒度的标签共同作用的结果。
+
+
 **关于 (c) Necklace 低 IoU 的进一步分析。** 经人工抽查发现，(c) 中 Necklace 案例的低 IoU（0.061）**并非由 SAM3 预测不准确导致，而是源于 GT 标注本身的不准确**。如下方对比图所示，SAM3 实际预测的 mask（蓝色）合理地覆盖了图中真实的项链链条区域，而 GT mask（绿色）的链条走向与实际像素位置存在显著偏移，呈"骨架式"粗略标注。两条细线一旦在空间上错位，IoU 会迅速塌缩至接近 0。这说明 PVTT 数据集在细链类目标上的 GT 质量存在系统性噪声，SAM3 在此类目标上的真实性能可能被现有指标低估。
 
 ![Necklace GT 标注质量抽查：左为原图与 GT（绿）叠加，右为 SAM3 预测（蓝）与 GT（绿）对比。可见 GT 标注的链条走向与实际链条像素位置存在偏移，导致 IoU 计算严重失真。](../sam3/sam3_pvtt_reproduction/necklace_GT_Inspection/necklace/compare_05.jpg)
 
-**关于 "low" 与 "failure" 标签的说明。** 图中 (c) 标注为 "low"、(d) 标注为 "failure"，二者描述的并非同一维度：**"low" 是帧级别（frame-level）描述**，指**该单帧的 IoU 数值偏低**（此处为 0.061）；**"failure" 是品类级别（category-level）描述**，指**该案例所属的品类（Earring）整体属于 SAM3 的失败品类**（Earring 品类 Mean IoU 仅 0.237，为 9 个品类中最差）。因此，"failure" 案例的单帧 IoU（0.364）反而高于 "low" 案例（0.061），这并非矛盾，而是两种粒度的标签共同作用的结果。
+
 
 ### 5.2 五模型横向对比
 
