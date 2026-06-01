@@ -60,19 +60,27 @@ SAM3 复现用的 PVTT 评测数据集在服务器的路径是：
 **本周 SAM3 复现具体设置：**
 
 - **模型：** 基于 `Sam3Processor` 文本 grounding 头，对每帧独立做图像级分割（无视频时序传播）。
+
 - **Prompt 设计：** 从文件名解析品类prompt（如 `watch → wristwatch`）。
+
 - **评测方案：** 稀疏采样，每视频**均匀抽取 8 帧**做 SAM3 推理并与 GT 算 IoU——**并非对全视频逐帧推理**。这样做的原因是：（1）PVTT 单视频 GT 可达数百帧，全帧跑 SAM3 算力开销大；（2）8 帧均匀采样足以反映各品类/场景下的分割质量分布，便于与前期 demo 对齐、快速迭代。该 IoU 指标衡量的是**关键帧定位精度**，不能直接等同于接入时序传播后的全视频 J&F。
+
 - **产出：** 完整推理流水线（断点续跑、失败容错）、定量报告与可视化 overlay。
 
 ## 4. 本周工作
 
 - **PVTT 数据集结构分析：** 完成 `DATASET_REPORT.md`，梳理 `source_videos_100`（98 视频 / 9 品类 / 18,230 帧 GT mask）的命名规则、scene 切分逻辑与 mask 格式。
-- **SAM3 最小复现（demo）：** 在 5 个视频、40 帧上验证推理pipeline与 IoU 计算流程。
+
 - **SAM3 全量复现：** 在 98 个 PVTT 评测视频上完成推理（每视频抽 8 帧，共 761/784 采样帧成功，耗时约 5.5 分钟），产出 `iou_summary.csv`、`meta/*.json`、`overlays/` 及完整实验报告。
+
 - **定量与定性分析：** 按商品品类、scene 标签分组统计 IoU 分布；生成 IoU 直方图、品类柱状图、scene 箱线图与四格定性对比图。
+
 - **五模型横向对比梳理：** 将 SAM3（PVTT 电商集）与 SAM2/Cutie/DEVA/XMem（DAVIS 2017）的能力边界对齐，提炼路由规则草案。
-- **INFER_NO_MASK 失败帧排查：** 对全量复现中 23 帧无 mask 输出（2.93%）逐帧导出原图与 GT 叠加，完成根因分类，详见 `sam3/sam3_pvtt_reproduction/NoMask_Failures/README.md`。
-- **Prompt 修正与定向重跑：** 针对 4 个涉事视频调整 prompt / 置信度阈值后重跑，其余 761 帧从原结果复制，产出 `no_mask_retry/`，详见 `sam3/sam3_pvtt_reproduction/no_mask_retry/README.md`。
+
+- **失败帧排查：** 对全量复现中 23 帧无 mask 输出（2.93%）逐帧导出原图与 GT 叠加，完成根因分类，详见 `sam3/sam3_pvtt_reproduction/NoMask_Failures/README.md`。
+
+- **Prompt 修正与重跑：** 针对 4 个涉事视频调整 prompt / 置信度阈值后重跑，其余 761 帧从原结果复制，产出 `no_mask_retry/`，详见 `sam3/sam3_pvtt_reproduction/no_mask_retry/README.md`。
+
 
 ### 4.1 SAM3 全量复现核心结果
 
