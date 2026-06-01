@@ -87,10 +87,10 @@ SAM3 复现用的 PVTT 评测数据集在服务器的路径是：
 | IoU ≥ 0.9 占比（采样帧） | 27.1%                   |
 
 
-**SAM3 IoU 分布SAM3 按品类 Mean IoUSAM3 按 scene 标签 IoU 对比**
+**SAM3 IoU 分布 & SAM3 按品类 Mean IoU 对比图**
 
 
-![SAM3 按品类 Mean IoU](../sam3/report_figures/sam3_category_bar.png)
+![SAM3 按品类 的 Mean IoU 统计](../sam3/report_figures/sam3_category_bar.png)
 **模型在不同类别上的分割表现差异**
 
 🟢 **表现好的（IoU > 0.7）：** watch（0.776）、handbag（0.765）、handfan（0.729）  
@@ -114,10 +114,6 @@ SAM3 复现用的 PVTT 评测数据集在服务器的路径是：
 
 **中位数(0.743)>> 均值(0.618)** —— 典型的"少数极差样本拖累整体均值"
 → 说明模型大部分时候表现不错,但有一小撮"灾难性失败"的帧
-
-![SAM3 按 scene 标签 IoU 对比](../sam3/report_figures/sam3_shot_box.png)
-
-
 
 
 
