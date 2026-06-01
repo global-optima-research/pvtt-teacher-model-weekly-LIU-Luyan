@@ -117,7 +117,7 @@ SAM3 复现用的 PVTT 评测数据集在服务器的路径是：
 
 
 
-### 4.2 INFER_NO_MASK 失败帧排查（23 帧 → 4 个视频）
+### 4.2 失败帧排查（23 帧 → 4 个视频）
 
 全量复现 784 次推理中，23 帧触发 `INFER_NO_MASK`（置信度阈值 0.1 下无任何检测输出）。**全部集中在 4 个视频**，其中 22 帧来自同一商品 `0013-handbag3` 的 3 段 scene：
 
@@ -144,7 +144,7 @@ SAM3 复现用的 PVTT 评测数据集在服务器的路径是：
 
 ![necklace frame_04：前后帧均成功，该帧拇指遮挡 + 金属高光导致置信度跌破 0.1](../sam3/sam3_pvtt_reproduction/NoMask_Failures/0038-necklace5_frame_04_gt_overlay.jpg)
 
-### 4.3 Prompt 修正与定向重跑
+### 4.3 Prompt 修正与重新实验
 
 **核心调整（仅改 2 类 prompt + 1 处阈值，其余 94 个视频不动）：**
 
@@ -153,6 +153,11 @@ SAM3 复现用的 PVTT 评测数据集在服务器的路径是：
 | `0013-handbag3_scene03/` | `handbag` | **`backpack` @ 0.1** | 目标为双肩背包 |
 | `0013-handbag3_scene01/`<br>`0013-handbag3_scene02/` | `handbag` | **`sling bag` @ 0.1**（失败帧 fallback 至 `handbag` @ 0.01） | 背戴斜挎包语义 |
 | `0038-necklace5/` | `necklace` @ 0.1 | **`necklace` @ 0.05** | 单帧边界 case，略降阈值即可 |
+
+
+- 原来用 necklace@0.1（阈值 0.1）→ 无 mask
+- 重跑改成 necklace@0.05 → 出现 mask 并恢复成功
+- 本质上是把“保留预测 mask 的最低分数门槛”从 0.1 降到 0.05。
 
 **整体指标变化（98 视频 × 8 帧 = 784 帧）：**
 
