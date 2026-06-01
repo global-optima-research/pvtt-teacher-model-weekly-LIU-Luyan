@@ -1,0 +1,13 @@
+{
+  "video": "0013-handbag3_scene02",
+  "category": "handbag",
+  "scene": "02",
+  "prompt": "handbag",
+  "video_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/source_videos_100/0013-handbag3_scene02.mp4",
+  "n_gt_frames": 75,
+  "frames": [],
+  "mean_iou": 0.0,
+  "median_iou": 0.0,
+  "n_success": 0,
+  "n_failed": 8
+}

@@ -1,0 +1,102 @@
+{
+  "video": "0031-earring3_scene04",
+  "category": "earring",
+  "scene": "04",
+  "prompt": "earring",
+  "video_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/source_videos_100/0031-earring3_scene04.mp4",
+  "n_gt_frames": 171,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "time": 0.1042,
+      "gt_frame": 11,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0031-earring3_scene04/00012.jpg",
+      "prompt": "earring",
+      "iou": 0.3643,
+      "n_masks": 5,
+      "infer_sec": 0.223,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0031-earring3_scene04/frame_00.jpg"
+    },
+    {
+      "frame_idx": 1,
+      "time": 0.3126,
+      "gt_frame": 32,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0031-earring3_scene04/00033.jpg",
+      "prompt": "earring",
+      "iou": 0.0,
+      "n_masks": 5,
+      "infer_sec": 0.22,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0031-earring3_scene04/frame_01.jpg"
+    },
+    {
+      "frame_idx": 2,
+      "time": 0.5209,
+      "gt_frame": 53,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0031-earring3_scene04/00054.jpg",
+      "prompt": "earring",
+      "iou": 0.0148,
+      "n_masks": 5,
+      "infer_sec": 0.22,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0031-earring3_scene04/frame_02.jpg"
+    },
+    {
+      "frame_idx": 3,
+      "time": 0.7293,
+      "gt_frame": 74,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0031-earring3_scene04/00075.jpg",
+      "prompt": "earring",
+      "iou": 0.0,
+      "n_masks": 5,
+      "infer_sec": 0.22,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0031-earring3_scene04/frame_03.jpg"
+    },
+    {
+      "frame_idx": 4,
+      "time": 0.9377,
+      "gt_frame": 96,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0031-earring3_scene04/00097.jpg",
+      "prompt": "earring",
+      "iou": 0.0526,
+      "n_masks": 4,
+      "infer_sec": 0.199,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0031-earring3_scene04/frame_04.jpg"
+    },
+    {
+      "frame_idx": 5,
+      "time": 1.1461,
+      "gt_frame": 117,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0031-earring3_scene04/00118.jpg",
+      "prompt": "earring",
+      "iou": 0.023,
+      "n_masks": 5,
+      "infer_sec": 0.19,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0031-earring3_scene04/frame_05.jpg"
+    },
+    {
+      "frame_idx": 6,
+      "time": 1.3544,
+      "gt_frame": 138,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0031-earring3_scene04/00139.jpg",
+      "prompt": "earring",
+      "iou": 0.0,
+      "n_masks": 5,
+      "infer_sec": 0.198,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0031-earring3_scene04/frame_06.jpg"
+    },
+    {
+      "frame_idx": 7,
+      "time": 1.5628,
+      "gt_frame": 159,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0031-earring3_scene04/00160.jpg",
+      "prompt": "earring",
+      "iou": 0.035,
+      "n_masks": 7,
+      "infer_sec": 0.194,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0031-earring3_scene04/frame_07.jpg"
+    }
+  ],
+  "mean_iou": 0.0612125,
+  "median_iou": 0.0189,
+  "n_success": 8,
+  "n_failed": 0
+}

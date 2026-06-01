@@ -1,0 +1,874 @@
+{
+  "frames": [
+    {
+      "video": "0013-handbag3_scene01",
+      "frame_idx": 1,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.493
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.077
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.074
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "handbag@0.01",
+      "iou": 0.9222,
+      "prompt": "handbag",
+      "threshold": 0.01
+    },
+    {
+      "video": "0013-handbag3_scene01",
+      "frame_idx": 2,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": false
+    },
+    {
+      "video": "0013-handbag3_scene01",
+      "frame_idx": 3,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": false
+    },
+    {
+      "video": "0013-handbag3_scene01",
+      "frame_idx": 5,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": false
+    },
+    {
+      "video": "0013-handbag3_scene01",
+      "frame_idx": 6,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 2,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "sling bag@0.1",
+      "iou": 0.9113,
+      "prompt": "sling bag",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene01",
+      "frame_idx": 7,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.074
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "sling bag@0.1",
+      "iou": 0.9049,
+      "prompt": "sling bag",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene02",
+      "frame_idx": 0,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "sling bag@0.1",
+      "iou": 0.9668,
+      "prompt": "sling bag",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene02",
+      "frame_idx": 1,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "sling bag@0.1",
+      "iou": 0.9293,
+      "prompt": "sling bag",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene02",
+      "frame_idx": 2,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "sling bag@0.1",
+      "iou": 0.9549,
+      "prompt": "sling bag",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene02",
+      "frame_idx": 3,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "handbag@0.01",
+      "iou": 0.9397,
+      "prompt": "handbag",
+      "threshold": 0.01
+    },
+    {
+      "video": "0013-handbag3_scene02",
+      "frame_idx": 4,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.072
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "sling bag@0.1",
+      "iou": 0.9588,
+      "prompt": "sling bag",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene02",
+      "frame_idx": 5,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.072
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "sling bag@0.1",
+      "iou": 0.9245,
+      "prompt": "sling bag",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene02",
+      "frame_idx": 6,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "sling bag@0.1",
+      "iou": 0.9717,
+      "prompt": "sling bag",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene02",
+      "frame_idx": 7,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "messenger bag@0.1",
+          "prompt": "messenger bag",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "sling bag@0.1",
+          "prompt": "sling bag",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.05",
+          "prompt": "handbag",
+          "threshold": 0.05,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "handbag@0.01",
+          "prompt": "handbag",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "sling bag@0.1",
+      "iou": 0.8531,
+      "prompt": "sling bag",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene03",
+      "frame_idx": 0,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "backpack@0.1",
+          "prompt": "backpack",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "backpack@0.05",
+          "prompt": "backpack",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 2,
+          "infer_sec": 0.074
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "backpack@0.1",
+      "iou": 0.7929,
+      "prompt": "backpack",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene03",
+      "frame_idx": 1,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "backpack@0.1",
+          "prompt": "backpack",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 3,
+          "infer_sec": 0.075
+        },
+        {
+          "label": "backpack@0.05",
+          "prompt": "backpack",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 5,
+          "infer_sec": 0.074
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "backpack@0.1",
+      "iou": 0.4637,
+      "prompt": "backpack",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene03",
+      "frame_idx": 2,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "backpack@0.1",
+          "prompt": "backpack",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "backpack@0.05",
+          "prompt": "backpack",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 3,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "backpack@0.1",
+      "iou": 0.4491,
+      "prompt": "backpack",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene03",
+      "frame_idx": 3,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "backpack@0.1",
+          "prompt": "backpack",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "backpack@0.05",
+          "prompt": "backpack",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 2,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "backpack@0.1",
+      "iou": 0.0634,
+      "prompt": "backpack",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene03",
+      "frame_idx": 4,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "backpack@0.1",
+          "prompt": "backpack",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "backpack@0.05",
+          "prompt": "backpack",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 4,
+          "infer_sec": 0.074
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "backpack@0.1",
+      "iou": 0.3732,
+      "prompt": "backpack",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene03",
+      "frame_idx": 5,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "backpack@0.1",
+          "prompt": "backpack",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 1,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "backpack@0.05",
+          "prompt": "backpack",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 6,
+          "infer_sec": 0.074
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "backpack@0.1",
+      "iou": 0.0367,
+      "prompt": "backpack",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene03",
+      "frame_idx": 6,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "backpack@0.1",
+          "prompt": "backpack",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 5,
+          "infer_sec": 0.075
+        },
+        {
+          "label": "backpack@0.05",
+          "prompt": "backpack",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 13,
+          "infer_sec": 0.075
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "backpack@0.1",
+      "iou": 0.106,
+      "prompt": "backpack",
+      "threshold": 0.1
+    },
+    {
+      "video": "0013-handbag3_scene03",
+      "frame_idx": 7,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "backpack@0.1",
+          "prompt": "backpack",
+          "threshold": 0.1,
+          "got_mask": true,
+          "n_masks": 3,
+          "infer_sec": 0.074
+        },
+        {
+          "label": "backpack@0.05",
+          "prompt": "backpack",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 7,
+          "infer_sec": 0.075
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "backpack@0.1",
+      "iou": 0.1461,
+      "prompt": "backpack",
+      "threshold": 0.1
+    },
+    {
+      "video": "0038-necklace5",
+      "frame_idx": 4,
+      "original_failure": "INFER_NO_MASK",
+      "attempt_log": [
+        {
+          "label": "necklace@0.1",
+          "prompt": "necklace",
+          "threshold": 0.1,
+          "got_mask": false,
+          "n_masks": 0,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "necklace@0.05",
+          "prompt": "necklace",
+          "threshold": 0.05,
+          "got_mask": true,
+          "n_masks": 3,
+          "infer_sec": 0.073
+        },
+        {
+          "label": "necklace@0.01",
+          "prompt": "necklace",
+          "threshold": 0.01,
+          "got_mask": true,
+          "n_masks": 7,
+          "infer_sec": 0.073
+        }
+      ],
+      "recovered": true,
+      "winning_attempt": "necklace@0.05",
+      "iou": 0.3395,
+      "prompt": "necklace",
+      "threshold": 0.05
+    }
+  ],
+  "summary": {
+    "total_retried": 23,
+    "recovered": 20,
+    "still_failed": 3,
+    "recovery_rate": 0.8696
+  }
+}

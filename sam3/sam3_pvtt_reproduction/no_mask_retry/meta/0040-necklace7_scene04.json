@@ -1,0 +1,102 @@
+{
+  "video": "0040-necklace7_scene04",
+  "category": "necklace",
+  "scene": "04",
+  "prompt": "necklace",
+  "video_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/source_videos_100/0040-necklace7_scene04.mp4",
+  "n_gt_frames": 80,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "time": 0.1669,
+      "gt_frame": 5,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0040-necklace7_scene04/00006.jpg",
+      "prompt": "necklace",
+      "iou": 0.8381,
+      "n_masks": 1,
+      "infer_sec": 0.222,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0040-necklace7_scene04/frame_00.jpg"
+    },
+    {
+      "frame_idx": 1,
+      "time": 0.5006,
+      "gt_frame": 15,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0040-necklace7_scene04/00016.jpg",
+      "prompt": "necklace",
+      "iou": 0.8279,
+      "n_masks": 1,
+      "infer_sec": 0.22,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0040-necklace7_scene04/frame_01.jpg"
+    },
+    {
+      "frame_idx": 2,
+      "time": 0.8344,
+      "gt_frame": 25,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0040-necklace7_scene04/00026.jpg",
+      "prompt": "necklace",
+      "iou": 0.8598,
+      "n_masks": 1,
+      "infer_sec": 0.22,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0040-necklace7_scene04/frame_02.jpg"
+    },
+    {
+      "frame_idx": 3,
+      "time": 1.1681,
+      "gt_frame": 35,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0040-necklace7_scene04/00036.jpg",
+      "prompt": "necklace",
+      "iou": 0.8964,
+      "n_masks": 1,
+      "infer_sec": 0.22,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0040-necklace7_scene04/frame_03.jpg"
+    },
+    {
+      "frame_idx": 4,
+      "time": 1.5019,
+      "gt_frame": 44,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0040-necklace7_scene04/00045.jpg",
+      "prompt": "necklace",
+      "iou": 0.8887,
+      "n_masks": 1,
+      "infer_sec": 0.219,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0040-necklace7_scene04/frame_04.jpg"
+    },
+    {
+      "frame_idx": 5,
+      "time": 1.8356,
+      "gt_frame": 54,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0040-necklace7_scene04/00055.jpg",
+      "prompt": "necklace",
+      "iou": 0.8817,
+      "n_masks": 1,
+      "infer_sec": 0.22,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0040-necklace7_scene04/frame_05.jpg"
+    },
+    {
+      "frame_idx": 6,
+      "time": 2.1694,
+      "gt_frame": 64,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0040-necklace7_scene04/00065.jpg",
+      "prompt": "necklace",
+      "iou": 0.8821,
+      "n_masks": 1,
+      "infer_sec": 0.131,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0040-necklace7_scene04/frame_06.jpg"
+    },
+    {
+      "frame_idx": 7,
+      "time": 2.5031,
+      "gt_frame": 74,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0040-necklace7_scene04/00075.jpg",
+      "prompt": "necklace",
+      "iou": 0.8663,
+      "n_masks": 1,
+      "infer_sec": 0.2,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0040-necklace7_scene04/frame_07.jpg"
+    }
+  ],
+  "mean_iou": 0.867625,
+  "median_iou": 0.874,
+  "n_success": 8,
+  "n_failed": 0
+}

@@ -1,0 +1,116 @@
+Traceback (most recent call last):
+  File "/data/liuluyan/sam3/sam3_pvtt_full/infer_pvtt_full.py", line 56, in <module>
+    import test_sam3  # noqa: E402
+    ^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'test_sam3'
+Eval videos (Plan A): 98 x 8 frames = up to 784
+Resume: 0 done, 98 remaining
+/data/liuluyan/sam3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/data/liuluyan/miniconda3/envs/sam3/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Device: cuda, checkpoint: /data/liuluyan/sam3/weights/sam3.pt
+videos:   0%|          | 0/98 [00:00<?, ?it/s][1/98] 0001-handfan1  cat=handfan  prompt=handfan  n_ok=8  mean_iou=0.567  failed=0
+videos:   1%|          | 1/98 [00:05<08:27,  5.23s/it][2/98] 0002-handfan2  cat=handfan  prompt=handfan  n_ok=8  mean_iou=0.932  failed=0
+videos:   2%|▏         | 2/98 [00:08<06:36,  4.13s/it][3/98] 0003-handfan3  cat=handfan  prompt=handfan  n_ok=8  mean_iou=0.364  failed=0
+videos:   3%|▎         | 3/98 [00:12<06:10,  3.90s/it][4/98] 0004-handfan4  cat=handfan  prompt=handfan  n_ok=8  mean_iou=0.735  failed=0
+videos:   4%|▍         | 4/98 [00:15<05:50,  3.73s/it][5/98] 0005-handfan5_scene01  cat=handfan  prompt=handfan  n_ok=8  mean_iou=0.952  failed=0
+videos:   5%|▌         | 5/98 [00:19<05:35,  3.61s/it][6/98] 0005-handfan5_scene02  cat=handfan  prompt=handfan  n_ok=8  mean_iou=0.822  failed=0
+videos:   6%|▌         | 6/98 [00:22<05:22,  3.50s/it][7/98] 0006-sunglasses1_scene01  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.489  failed=0
+videos:   7%|▋         | 7/98 [00:25<05:12,  3.44s/it][8/98] 0006-sunglasses1_scene02  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.371  failed=0
+videos:   8%|▊         | 8/98 [00:29<05:07,  3.41s/it][9/98] 0007-sunglasses2  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.261  failed=0
+videos:   9%|▉         | 9/98 [00:32<05:03,  3.41s/it][10/98] 0008-sunglasses3  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.158  failed=0
+videos:  10%|█         | 10/98 [00:35<04:53,  3.33s/it][11/98] 0009-sunglasses4_scene01  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.905  failed=0
+videos:  11%|█         | 11/98 [00:38<04:51,  3.35s/it][12/98] 0009-sunglasses4_scene02  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.944  failed=0
+videos:  12%|█▏        | 12/98 [00:42<04:48,  3.36s/it][13/98] 0009-sunglasses4_scene03  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.768  failed=0
+videos:  13%|█▎        | 13/98 [00:45<04:42,  3.32s/it][14/98] 0009-sunglasses4_scene04  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.926  failed=0
+videos:  14%|█▍        | 14/98 [00:48<04:38,  3.31s/it][15/98] 0009-sunglasses4_scene05  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.800  failed=0
+videos:  15%|█▌        | 15/98 [00:51<04:09,  3.01s/it][16/98] 0009-sunglasses4_scene06  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.858  failed=0
+videos:  16%|█▋        | 16/98 [00:54<04:20,  3.17s/it][17/98] 0009-sunglasses4_scene07  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.931  failed=0
+videos:  17%|█▋        | 17/98 [00:58<04:21,  3.22s/it][18/98] 0010-sunglasses5_scene01  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.324  failed=0
+videos:  18%|█▊        | 18/98 [01:01<04:21,  3.27s/it][19/98] 0010-sunglasses5_scene02  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.047  failed=0
+videos:  19%|█▉        | 19/98 [01:04<04:18,  3.27s/it][20/98] 0010-sunglasses5_scene03  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.430  failed=0
+videos:  20%|██        | 20/98 [01:07<04:14,  3.26s/it][21/98] 0010-sunglasses5_scene04  cat=sunglasses  prompt=sunglasses  n_ok=8  mean_iou=0.412  failed=0
+videos:  21%|██▏       | 21/98 [01:11<04:13,  3.29s/it][22/98] 0011-handbag1_scene01  cat=handbag  prompt=handbag  n_ok=8  mean_iou=0.947  failed=0
+videos:  22%|██▏       | 22/98 [01:14<04:13,  3.33s/it][23/98] 0011-handbag1_scene02  cat=handbag  prompt=handbag  n_ok=8  mean_iou=0.967  failed=0
+videos:  23%|██▎       | 23/98 [01:18<04:11,  3.36s/it][24/98] 0011-handbag1_scene03  cat=handbag  prompt=handbag  n_ok=8  mean_iou=0.890  failed=0
+videos:  24%|██▍       | 24/98 [01:21<04:07,  3.35s/it][25/98] 0012-handbag2  cat=handbag  prompt=handbag  n_ok=8  mean_iou=0.283  failed=0
+videos:  26%|██▌       | 25/98 [01:24<04:01,  3.31s/it][26/98] 0013-handbag3_scene01  cat=handbag  prompt=handbag  n_ok=2  mean_iou=0.927  failed=6
+videos:  27%|██▋       | 26/98 [01:27<03:56,  3.28s/it][27/98] 0013-handbag3_scene02  cat=handbag  prompt=handbag  n_ok=0  mean_iou=0.000  failed=8
+videos:  28%|██▊       | 27/98 [01:30<03:40,  3.10s/it][28/98] 0013-handbag3_scene03  cat=handbag  prompt=handbag  n_ok=0  mean_iou=0.000  failed=8
+videos:  29%|██▊       | 28/98 [01:33<03:36,  3.10s/it][29/98] 0014-handbag4  cat=handbag  prompt=handbag  n_ok=8  mean_iou=0.517  failed=0
+videos:  30%|██▉       | 29/98 [01:37<03:37,  3.16s/it][30/98] 0015-handbag5  cat=handbag  prompt=handbag  n_ok=8  mean_iou=0.944  failed=0
+videos:  31%|███       | 30/98 [01:40<03:39,  3.22s/it][31/98] 0016-purse1  cat=purse  prompt=purse  n_ok=8  mean_iou=0.475  failed=0
+videos:  32%|███▏      | 31/98 [01:42<03:22,  3.02s/it][32/98] 0017-purse2  cat=purse  prompt=purse  n_ok=8  mean_iou=0.542  failed=0
+videos:  33%|███▎      | 32/98 [01:45<03:05,  2.82s/it][33/98] 0018-purse3_scene01  cat=purse  prompt=purse  n_ok=8  mean_iou=0.850  failed=0
+videos:  34%|███▎      | 33/98 [01:47<02:53,  2.67s/it][34/98] 0018-purse3_scene02  cat=purse  prompt=purse  n_ok=8  mean_iou=0.888  failed=0
+videos:  35%|███▍      | 34/98 [01:50<02:59,  2.80s/it][35/98] 0019-bracelet1  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.435  failed=0
+videos:  36%|███▌      | 35/98 [01:54<03:09,  3.00s/it][36/98] 0020-bracelet2_scene01  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.346  failed=0
+videos:  37%|███▋      | 36/98 [01:57<03:14,  3.14s/it][37/98] 0020-bracelet2_scene02  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.576  failed=0
+videos:  38%|███▊      | 37/98 [02:00<03:11,  3.14s/it][38/98] 0021-bracelet3  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.917  failed=0
+videos:  39%|███▉      | 38/98 [02:04<03:12,  3.20s/it][39/98] 0022-bracelet4  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.224  failed=0
+videos:  40%|███▉      | 39/98 [02:07<03:11,  3.24s/it][40/98] 0023-bracelet5  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.368  failed=0
+videos:  41%|████      | 40/98 [02:10<03:09,  3.26s/it][41/98] 0024-bracelet6_scene01  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.797  failed=0
+videos:  42%|████▏     | 41/98 [02:14<03:07,  3.28s/it][42/98] 0024-bracelet6_scene02  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.700  failed=0
+videos:  43%|████▎     | 42/98 [02:17<03:02,  3.27s/it][43/98] 0025-bracelet7_scene01  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.889  failed=0
+videos:  44%|████▍     | 43/98 [02:20<02:58,  3.24s/it][44/98] 0025-bracelet7_scene02  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.867  failed=0
+videos:  45%|████▍     | 44/98 [02:23<02:54,  3.23s/it][45/98] 0025-bracelet7_scene03  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.879  failed=0
+videos:  46%|████▌     | 45/98 [02:26<02:50,  3.21s/it][46/98] 0025-bracelet7_scene04  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.869  failed=0
+videos:  47%|████▋     | 46/98 [02:29<02:36,  3.02s/it][47/98] 0026-bracelet8_scene01  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.960  failed=0
+videos:  48%|████▊     | 47/98 [02:32<02:37,  3.08s/it][48/98] 0026-bracelet8_scene02  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.598  failed=0
+videos:  49%|████▉     | 48/98 [02:35<02:25,  2.92s/it][49/98] 0026-bracelet8_scene03  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.872  failed=0
+videos:  50%|█████     | 49/98 [02:37<02:17,  2.80s/it][50/98] 0027-bracelet9  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.092  failed=0
+videos:  51%|█████     | 50/98 [02:40<02:17,  2.86s/it][51/98] 0028-bracelet10  cat=bracelet  prompt=bracelet  n_ok=8  mean_iou=0.156  failed=0
+videos:  52%|█████▏    | 51/98 [02:43<02:16,  2.91s/it][52/98] 0029-earring1  cat=earring  prompt=earring  n_ok=8  mean_iou=0.529  failed=0
+videos:  53%|█████▎    | 52/98 [02:46<02:15,  2.95s/it][53/98] 0030-earring2  cat=earring  prompt=earring  n_ok=8  mean_iou=0.303  failed=0
+videos:  54%|█████▍    | 53/98 [02:49<02:15,  3.02s/it][54/98] 0031-earring3_scene01  cat=earring  prompt=earring  n_ok=8  mean_iou=0.225  failed=0
+videos:  55%|█████▌    | 54/98 [02:53<02:14,  3.06s/it][55/98] 0031-earring3_scene02  cat=earring  prompt=earring  n_ok=8  mean_iou=0.149  failed=0
+videos:  56%|█████▌    | 55/98 [02:56<02:14,  3.12s/it][56/98] 0031-earring3_scene03  cat=earring  prompt=earring  n_ok=8  mean_iou=0.157  failed=0
+videos:  57%|█████▋    | 56/98 [02:59<02:11,  3.14s/it][57/98] 0031-earring3_scene04  cat=earring  prompt=earring  n_ok=8  mean_iou=0.061  failed=0
+videos:  58%|█████▊    | 57/98 [03:02<02:09,  3.17s/it][58/98] 0032-earring4  cat=earring  prompt=earring  n_ok=8  mean_iou=0.394  failed=0
+videos:  59%|█████▉    | 58/98 [03:06<02:11,  3.28s/it][59/98] 0033-earring5  cat=earring  prompt=earring  n_ok=8  mean_iou=0.077  failed=0
+videos:  60%|██████    | 59/98 [03:09<02:09,  3.32s/it][60/98] 0034-necklace1  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.058  failed=0
+videos:  61%|██████    | 60/98 [03:13<02:07,  3.35s/it][61/98] 0035-necklace2  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.120  failed=0
+videos:  62%|██████▏   | 61/98 [03:16<02:03,  3.33s/it][62/98] 0036-necklace3_scene01  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.828  failed=0
+videos:  63%|██████▎   | 62/98 [03:19<01:58,  3.29s/it][63/98] 0036-necklace3_scene02  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.807  failed=0
+videos:  64%|██████▍   | 63/98 [03:22<01:53,  3.26s/it][64/98] 0036-necklace3_scene03  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.870  failed=0
+videos:  65%|██████▌   | 64/98 [03:25<01:40,  2.95s/it][65/98] 0036-necklace3_scene04  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.725  failed=0
+videos:  66%|██████▋   | 65/98 [03:27<01:31,  2.78s/it][66/98] 0037-necklace4  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.135  failed=0
+videos:  67%|██████▋   | 66/98 [03:30<01:35,  2.98s/it][67/98] 0038-necklace5  cat=necklace  prompt=necklace  n_ok=7  mean_iou=0.392  failed=1
+videos:  68%|██████▊   | 67/98 [03:34<01:36,  3.10s/it][68/98] 0039-necklace6_scene01  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.306  failed=0
+videos:  69%|██████▉   | 68/98 [03:37<01:35,  3.17s/it][69/98] 0039-necklace6_scene02  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.550  failed=0
+videos:  70%|███████   | 69/98 [03:41<01:34,  3.26s/it][70/98] 0039-necklace6_scene03  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.152  failed=0
+videos:  71%|███████▏  | 70/98 [03:44<01:32,  3.29s/it][71/98] 0040-necklace7_scene01  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.757  failed=0
+videos:  72%|███████▏  | 71/98 [03:47<01:27,  3.25s/it][72/98] 0040-necklace7_scene02  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.593  failed=0
+videos:  73%|███████▎  | 72/98 [03:50<01:22,  3.18s/it][73/98] 0040-necklace7_scene03  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.478  failed=0
+videos:  74%|███████▍  | 73/98 [03:53<01:18,  3.15s/it][74/98] 0040-necklace7_scene04  cat=necklace  prompt=necklace  n_ok=8  mean_iou=0.868  failed=0
+videos:  76%|███████▌  | 74/98 [03:56<01:15,  3.14s/it][75/98] 0041-watch1  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.214  failed=0
+videos:  77%|███████▋  | 75/98 [04:00<01:14,  3.22s/it][76/98] 0042-watch2  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.547  failed=0
+videos:  78%|███████▊  | 76/98 [04:03<01:12,  3.30s/it][77/98] 0043-watch3_scene01  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.862  failed=0
+videos:  79%|███████▊  | 77/98 [04:07<01:09,  3.30s/it][78/98] 0043-watch3_scene02  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.808  failed=0
+videos:  80%|███████▉  | 78/98 [04:10<01:06,  3.31s/it][79/98] 0043-watch3_scene03  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.973  failed=0
+videos:  81%|████████  | 79/98 [04:13<01:02,  3.30s/it][80/98] 0044-watch4  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.929  failed=0
+videos:  82%|████████▏ | 80/98 [04:16<00:59,  3.29s/it][81/98] 0045-watch5  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.312  failed=0
+videos:  83%|████████▎ | 81/98 [04:20<00:56,  3.31s/it][82/98] 0046-watch6_scene01  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.946  failed=0
+videos:  84%|████████▎ | 82/98 [04:23<00:52,  3.30s/it][83/98] 0046-watch6_scene02  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.956  failed=0
+videos:  85%|████████▍ | 83/98 [04:26<00:49,  3.30s/it][84/98] 0046-watch6_scene03  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.985  failed=0
+videos:  86%|████████▌ | 84/98 [04:29<00:45,  3.25s/it][85/98] 0046-watch6_scene04  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.969  failed=0
+videos:  87%|████████▋ | 85/98 [04:33<00:41,  3.21s/it][86/98] 0046-watch6_scene05  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.964  failed=0
+videos:  88%|████████▊ | 86/98 [04:36<00:38,  3.22s/it][87/98] 0047-watch7_scene01  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.923  failed=0
+videos:  89%|████████▉ | 87/98 [04:39<00:33,  3.09s/it][88/98] 0047-watch7_scene02  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.988  failed=0
+videos:  90%|████████▉ | 88/98 [04:42<00:31,  3.19s/it][89/98] 0047-watch7_scene03  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.883  failed=0
+videos:  91%|█████████ | 89/98 [04:46<00:29,  3.27s/it][90/98] 0047-watch7_scene04  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.827  failed=0
+videos:  92%|█████████▏| 90/98 [04:49<00:26,  3.29s/it][91/98] 0048-watch8_scene01  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.396  failed=0
+videos:  93%|█████████▎| 91/98 [04:52<00:22,  3.27s/it][92/98] 0048-watch8_scene02  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.563  failed=0
+videos:  94%|█████████▍| 92/98 [04:55<00:19,  3.28s/it][93/98] 0048-watch8_scene03  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.788  failed=0
+videos:  95%|█████████▍| 93/98 [04:59<00:16,  3.33s/it][94/98] 0048-watch8_scene04  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.569  failed=0
+videos:  96%|█████████▌| 94/98 [05:02<00:13,  3.35s/it][95/98] 0048-watch8_scene05  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.819  failed=0
+videos:  97%|█████████▋| 95/98 [05:05<00:09,  3.31s/it][96/98] 0048-watch8_scene06  cat=watch  prompt=wristwatch  n_ok=8  mean_iou=0.841  failed=0
+videos:  98%|█████████▊| 96/98 [05:09<00:06,  3.30s/it][97/98] 0049-clothing1  cat=clothing  prompt=clothing  n_ok=8  mean_iou=0.666  failed=0
+videos:  99%|█████████▉| 97/98 [05:12<00:03,  3.31s/it][98/98] 0050-clothing2  cat=clothing  prompt=clothing  n_ok=8  mean_iou=0.527  failed=0
+videos: 100%|██████████| 98/98 [05:16<00:00,  3.39s/it]videos: 100%|██████████| 98/98 [05:16<00:00,  3.23s/it]
+
+Done. elapsed=329.1s
+manifest: /data/liuluyan/sam3/sam3_pvtt_full/manifest.csv
+iou_summary: /data/liuluyan/sam3/sam3_pvtt_full/iou_summary.csv
+progress: /data/liuluyan/sam3/sam3_pvtt_full/progress.json (98/98)

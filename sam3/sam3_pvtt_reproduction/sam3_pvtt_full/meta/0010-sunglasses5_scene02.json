@@ -1,0 +1,102 @@
+{
+  "video": "0010-sunglasses5_scene02",
+  "category": "sunglasses",
+  "scene": "02",
+  "prompt": "sunglasses",
+  "video_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/source_videos_100/0010-sunglasses5_scene02.mp4",
+  "n_gt_frames": 204,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "time": 0.2086,
+      "gt_frame": 13,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0010-sunglasses5_scene02/00014.jpg",
+      "prompt": "sunglasses",
+      "iou": 0.2861,
+      "n_masks": 1,
+      "infer_sec": 0.224,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0010-sunglasses5_scene02/frame_00.jpg"
+    },
+    {
+      "frame_idx": 1,
+      "time": 0.6257,
+      "gt_frame": 38,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0010-sunglasses5_scene02/00039.jpg",
+      "prompt": "sunglasses",
+      "iou": 0.0,
+      "n_masks": 1,
+      "infer_sec": 0.22,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0010-sunglasses5_scene02/frame_01.jpg"
+    },
+    {
+      "frame_idx": 2,
+      "time": 1.0428,
+      "gt_frame": 63,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0010-sunglasses5_scene02/00064.jpg",
+      "prompt": "sunglasses",
+      "iou": 0.0918,
+      "n_masks": 1,
+      "infer_sec": 0.221,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0010-sunglasses5_scene02/frame_02.jpg"
+    },
+    {
+      "frame_idx": 3,
+      "time": 1.4599,
+      "gt_frame": 89,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0010-sunglasses5_scene02/00090.jpg",
+      "prompt": "sunglasses",
+      "iou": 0.0,
+      "n_masks": 3,
+      "infer_sec": 0.164,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0010-sunglasses5_scene02/frame_03.jpg"
+    },
+    {
+      "frame_idx": 4,
+      "time": 1.8771,
+      "gt_frame": 114,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0010-sunglasses5_scene02/00115.jpg",
+      "prompt": "sunglasses",
+      "iou": 0.0,
+      "n_masks": 3,
+      "infer_sec": 0.198,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0010-sunglasses5_scene02/frame_04.jpg"
+    },
+    {
+      "frame_idx": 5,
+      "time": 2.2942,
+      "gt_frame": 140,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0010-sunglasses5_scene02/00141.jpg",
+      "prompt": "sunglasses",
+      "iou": 0.0,
+      "n_masks": 1,
+      "infer_sec": 0.196,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0010-sunglasses5_scene02/frame_05.jpg"
+    },
+    {
+      "frame_idx": 6,
+      "time": 2.7113,
+      "gt_frame": 165,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0010-sunglasses5_scene02/00166.jpg",
+      "prompt": "sunglasses",
+      "iou": 0.0,
+      "n_masks": 1,
+      "infer_sec": 0.198,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0010-sunglasses5_scene02/frame_06.jpg"
+    },
+    {
+      "frame_idx": 7,
+      "time": 3.1284,
+      "gt_frame": 190,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0010-sunglasses5_scene02/00191.jpg",
+      "prompt": "sunglasses",
+      "iou": 0.0006,
+      "n_masks": 1,
+      "infer_sec": 0.193,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0010-sunglasses5_scene02/frame_07.jpg"
+    }
+  ],
+  "mean_iou": 0.0473125,
+  "median_iou": 0.0,
+  "n_success": 8,
+  "n_failed": 0
+}

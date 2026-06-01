@@ -1,0 +1,102 @@
+{
+  "video": "0001-handfan1",
+  "category": "handfan",
+  "scene": null,
+  "prompt": "handfan",
+  "video_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/source_videos_100/0001-handfan1.mp4",
+  "n_gt_frames": 434,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "time": 0.2084,
+      "gt_frame": 27,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0001-handfan1/00028.jpg",
+      "prompt": "handfan",
+      "iou": 0.803,
+      "n_masks": 8,
+      "infer_sec": 1.488,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0001-handfan1/frame_00.jpg"
+    },
+    {
+      "frame_idx": 1,
+      "time": 0.6251,
+      "gt_frame": 81,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0001-handfan1/00082.jpg",
+      "prompt": "handfan",
+      "iou": 0.7839,
+      "n_masks": 6,
+      "infer_sec": 0.223,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0001-handfan1/frame_01.jpg"
+    },
+    {
+      "frame_idx": 2,
+      "time": 1.0419,
+      "gt_frame": 135,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0001-handfan1/00136.jpg",
+      "prompt": "handfan",
+      "iou": 0.4517,
+      "n_masks": 7,
+      "infer_sec": 0.221,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0001-handfan1/frame_02.jpg"
+    },
+    {
+      "frame_idx": 3,
+      "time": 1.4586,
+      "gt_frame": 189,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0001-handfan1/00190.jpg",
+      "prompt": "handfan",
+      "iou": 0.4559,
+      "n_masks": 5,
+      "infer_sec": 0.221,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0001-handfan1/frame_03.jpg"
+    },
+    {
+      "frame_idx": 4,
+      "time": 1.8754,
+      "gt_frame": 244,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0001-handfan1/00245.jpg",
+      "prompt": "handfan",
+      "iou": 0.4928,
+      "n_masks": 7,
+      "infer_sec": 0.221,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0001-handfan1/frame_04.jpg"
+    },
+    {
+      "frame_idx": 5,
+      "time": 2.2921,
+      "gt_frame": 298,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0001-handfan1/00299.jpg",
+      "prompt": "handfan",
+      "iou": 0.3531,
+      "n_masks": 5,
+      "infer_sec": 0.194,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0001-handfan1/frame_05.jpg"
+    },
+    {
+      "frame_idx": 6,
+      "time": 2.7089,
+      "gt_frame": 352,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0001-handfan1/00353.jpg",
+      "prompt": "handfan",
+      "iou": 0.4033,
+      "n_masks": 7,
+      "infer_sec": 0.192,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0001-handfan1/frame_06.jpg"
+    },
+    {
+      "frame_idx": 7,
+      "time": 3.1256,
+      "gt_frame": 406,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0001-handfan1/00407.jpg",
+      "prompt": "handfan",
+      "iou": 0.7923,
+      "n_masks": 9,
+      "infer_sec": 0.194,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0001-handfan1/frame_07.jpg"
+    }
+  ],
+  "mean_iou": 0.567,
+  "median_iou": 0.47435000000000005,
+  "n_success": 8,
+  "n_failed": 0
+}

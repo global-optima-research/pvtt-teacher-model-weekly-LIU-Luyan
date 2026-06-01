@@ -1,0 +1,102 @@
+{
+  "video": "0020-bracelet2_scene02",
+  "category": "bracelet",
+  "scene": "02",
+  "prompt": "bracelet",
+  "video_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/source_videos_100/0020-bracelet2_scene02.mp4",
+  "n_gt_frames": 93,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "time": 0.2424,
+      "gt_frame": 6,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0020-bracelet2_scene02/00007.jpg",
+      "prompt": "bracelet",
+      "iou": 0.8685,
+      "n_masks": 1,
+      "infer_sec": 0.223,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0020-bracelet2_scene02/frame_00.jpg"
+    },
+    {
+      "frame_idx": 1,
+      "time": 0.7273,
+      "gt_frame": 17,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0020-bracelet2_scene02/00018.jpg",
+      "prompt": "bracelet",
+      "iou": 0.8649,
+      "n_masks": 1,
+      "infer_sec": 0.221,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0020-bracelet2_scene02/frame_01.jpg"
+    },
+    {
+      "frame_idx": 2,
+      "time": 1.2122,
+      "gt_frame": 29,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0020-bracelet2_scene02/00030.jpg",
+      "prompt": "bracelet",
+      "iou": 0.4826,
+      "n_masks": 4,
+      "infer_sec": 0.223,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0020-bracelet2_scene02/frame_02.jpg"
+    },
+    {
+      "frame_idx": 3,
+      "time": 1.6971,
+      "gt_frame": 40,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0020-bracelet2_scene02/00041.jpg",
+      "prompt": "bracelet",
+      "iou": 0.4868,
+      "n_masks": 3,
+      "infer_sec": 0.138,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0020-bracelet2_scene02/frame_03.jpg"
+    },
+    {
+      "frame_idx": 4,
+      "time": 2.1819,
+      "gt_frame": 52,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0020-bracelet2_scene02/00053.jpg",
+      "prompt": "bracelet",
+      "iou": 0.4786,
+      "n_masks": 3,
+      "infer_sec": 0.2,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0020-bracelet2_scene02/frame_04.jpg"
+    },
+    {
+      "frame_idx": 5,
+      "time": 2.6668,
+      "gt_frame": 63,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0020-bracelet2_scene02/00064.jpg",
+      "prompt": "bracelet",
+      "iou": 0.4711,
+      "n_masks": 3,
+      "infer_sec": 0.196,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0020-bracelet2_scene02/frame_05.jpg"
+    },
+    {
+      "frame_idx": 6,
+      "time": 3.1517,
+      "gt_frame": 75,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0020-bracelet2_scene02/00076.jpg",
+      "prompt": "bracelet",
+      "iou": 0.4734,
+      "n_masks": 3,
+      "infer_sec": 0.196,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0020-bracelet2_scene02/frame_06.jpg"
+    },
+    {
+      "frame_idx": 7,
+      "time": 3.6366,
+      "gt_frame": 86,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0020-bracelet2_scene02/00087.jpg",
+      "prompt": "bracelet",
+      "iou": 0.4805,
+      "n_masks": 3,
+      "infer_sec": 0.196,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0020-bracelet2_scene02/frame_07.jpg"
+    }
+  ],
+  "mean_iou": 0.5758,
+  "median_iou": 0.48155,
+  "n_success": 8,
+  "n_failed": 0
+}

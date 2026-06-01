@@ -1,0 +1,174 @@
+{
+  "n_videos": 98,
+  "n_frames": 761,
+  "expected_frames": 784,
+  "iou_mean": 0.6184,
+  "iou_median": 0.7429,
+  "iou_std": 0.3318,
+  "iou_min": 0.0,
+  "iou_max": 0.9923,
+  "hist": {
+    "[0,0.3)": 173,
+    "[0.3,0.5)": 89,
+    "[0.5,0.7)": 93,
+    "[0.7,0.9)": 200,
+    "[0.9,1.0]": 206
+  },
+  "cat_stats": {
+    "bracelet": {
+      "n_frames": 136,
+      "mean": 0.6204,
+      "median": 0.7471
+    },
+    "clothing": {
+      "n_frames": 16,
+      "mean": 0.5965,
+      "median": 0.5794
+    },
+    "earring": {
+      "n_frames": 64,
+      "mean": 0.237,
+      "median": 0.1599
+    },
+    "handbag": {
+      "n_frames": 50,
+      "mean": 0.7649,
+      "median": 0.9297
+    },
+    "handfan": {
+      "n_frames": 48,
+      "mean": 0.7285,
+      "median": 0.7976
+    },
+    "necklace": {
+      "n_frames": 119,
+      "mean": 0.5103,
+      "median": 0.5694
+    },
+    "purse": {
+      "n_frames": 32,
+      "mean": 0.6888,
+      "median": 0.7779
+    },
+    "sunglasses": {
+      "n_frames": 120,
+      "mean": 0.5749,
+      "median": 0.6495
+    },
+    "watch": {
+      "n_frames": 176,
+      "mean": 0.7757,
+      "median": 0.895
+    }
+  },
+  "scene_stats": {
+    "01": {
+      "n_frames": 146,
+      "mean": 0.7087
+    },
+    "02": {
+      "n_frames": 144,
+      "mean": 0.6775
+    },
+    "03": {
+      "n_frames": 104,
+      "mean": 0.702
+    },
+    "04": {
+      "n_frames": 72,
+      "mean": 0.6916
+    },
+    "05": {
+      "n_frames": 24,
+      "mean": 0.8614
+    },
+    "06": {
+      "n_frames": 16,
+      "mean": 0.8498
+    },
+    "07": {
+      "n_frames": 8,
+      "mean": 0.9306
+    },
+    "none": {
+      "n_frames": 247,
+      "mean": 0.4252
+    }
+  },
+  "top5": [
+    {
+      "video": "0047-watch7_scene02",
+      "category": "watch",
+      "mean_iou": "0.9881",
+      "n_frames": "8",
+      "n_failed": "0"
+    },
+    {
+      "video": "0046-watch6_scene03",
+      "category": "watch",
+      "mean_iou": "0.9845",
+      "n_frames": "8",
+      "n_failed": "0"
+    },
+    {
+      "video": "0043-watch3_scene03",
+      "category": "watch",
+      "mean_iou": "0.9733",
+      "n_frames": "8",
+      "n_failed": "0"
+    },
+    {
+      "video": "0046-watch6_scene04",
+      "category": "watch",
+      "mean_iou": "0.9692",
+      "n_frames": "8",
+      "n_failed": "0"
+    },
+    {
+      "video": "0011-handbag1_scene02",
+      "category": "handbag",
+      "mean_iou": "0.9672",
+      "n_frames": "8",
+      "n_failed": "0"
+    }
+  ],
+  "bot5": [
+    {
+      "video": "0031-earring3_scene04",
+      "category": "earring",
+      "mean_iou": "0.0612",
+      "n_frames": "8",
+      "n_failed": "0"
+    },
+    {
+      "video": "0034-necklace1",
+      "category": "necklace",
+      "mean_iou": "0.0583",
+      "n_frames": "8",
+      "n_failed": "0"
+    },
+    {
+      "video": "0010-sunglasses5_scene02",
+      "category": "sunglasses",
+      "mean_iou": "0.0473",
+      "n_frames": "8",
+      "n_failed": "0"
+    },
+    {
+      "video": "0013-handbag3_scene02",
+      "category": "handbag",
+      "mean_iou": "0.0",
+      "n_frames": "0",
+      "n_failed": "8"
+    },
+    {
+      "video": "0013-handbag3_scene03",
+      "category": "handbag",
+      "mean_iou": "0.0",
+      "n_frames": "0",
+      "n_failed": "8"
+    }
+  ],
+  "n_failed_lines": 23,
+  "failed_rate": 0.0293
+}

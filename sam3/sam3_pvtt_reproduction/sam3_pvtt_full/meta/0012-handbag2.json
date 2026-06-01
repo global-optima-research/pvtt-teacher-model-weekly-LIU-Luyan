@@ -1,0 +1,102 @@
+{
+  "video": "0012-handbag2",
+  "category": "handbag",
+  "scene": null,
+  "prompt": "handbag",
+  "video_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/source_videos_100/0012-handbag2.mp4",
+  "n_gt_frames": 388,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "time": 0.1042,
+      "gt_frame": 24,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0012-handbag2/00025.jpg",
+      "prompt": "handbag",
+      "iou": 0.9457,
+      "n_masks": 1,
+      "infer_sec": 0.188,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0012-handbag2/frame_00.jpg"
+    },
+    {
+      "frame_idx": 1,
+      "time": 0.3126,
+      "gt_frame": 73,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0012-handbag2/00074.jpg",
+      "prompt": "handbag",
+      "iou": 0.3744,
+      "n_masks": 1,
+      "infer_sec": 0.196,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0012-handbag2/frame_01.jpg"
+    },
+    {
+      "frame_idx": 2,
+      "time": 0.5209,
+      "gt_frame": 121,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0012-handbag2/00122.jpg",
+      "prompt": "handbag",
+      "iou": 0.0101,
+      "n_masks": 1,
+      "infer_sec": 0.194,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0012-handbag2/frame_02.jpg"
+    },
+    {
+      "frame_idx": 3,
+      "time": 0.7293,
+      "gt_frame": 169,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0012-handbag2/00170.jpg",
+      "prompt": "handbag",
+      "iou": 0.0081,
+      "n_masks": 1,
+      "infer_sec": 0.177,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0012-handbag2/frame_03.jpg"
+    },
+    {
+      "frame_idx": 4,
+      "time": 0.9377,
+      "gt_frame": 218,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0012-handbag2/00219.jpg",
+      "prompt": "handbag",
+      "iou": 0.0618,
+      "n_masks": 1,
+      "infer_sec": 0.196,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0012-handbag2/frame_04.jpg"
+    },
+    {
+      "frame_idx": 5,
+      "time": 1.1461,
+      "gt_frame": 266,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0012-handbag2/00267.jpg",
+      "prompt": "handbag",
+      "iou": 0.5949,
+      "n_masks": 1,
+      "infer_sec": 0.197,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0012-handbag2/frame_05.jpg"
+    },
+    {
+      "frame_idx": 6,
+      "time": 1.3544,
+      "gt_frame": 314,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0012-handbag2/00315.jpg",
+      "prompt": "handbag",
+      "iou": 0.1711,
+      "n_masks": 1,
+      "infer_sec": 0.197,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0012-handbag2/frame_06.jpg"
+    },
+    {
+      "frame_idx": 7,
+      "time": 1.5628,
+      "gt_frame": 363,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0012-handbag2/00364.jpg",
+      "prompt": "handbag",
+      "iou": 0.098,
+      "n_masks": 1,
+      "infer_sec": 0.221,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0012-handbag2/frame_07.jpg"
+    }
+  ],
+  "mean_iou": 0.2830125,
+  "median_iou": 0.13455,
+  "n_success": 8,
+  "n_failed": 0
+}

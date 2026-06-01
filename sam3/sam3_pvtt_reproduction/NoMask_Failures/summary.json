@@ -1,0 +1,237 @@
+{
+  "total_failures": 23,
+  "failure_type": "INFER_NO_MASK",
+  "confidence_threshold": 0.1,
+  "entries": [
+    {
+      "stem": "0013-handbag3_scene01",
+      "frame_idx": 1,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene01_frame_01.jpg",
+      "gt_overlay_file": "0013-handbag3_scene01_frame_01_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene01/00018.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene01/frame_01.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene01",
+      "frame_idx": 2,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene01_frame_02.jpg",
+      "gt_overlay_file": "0013-handbag3_scene01_frame_02_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene01/00029.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene01/frame_02.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene01",
+      "frame_idx": 3,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene01_frame_03.jpg",
+      "gt_overlay_file": "0013-handbag3_scene01_frame_03_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene01/00040.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene01/frame_03.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene01",
+      "frame_idx": 5,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene01_frame_05.jpg",
+      "gt_overlay_file": "0013-handbag3_scene01_frame_05_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene01/00063.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene01/frame_05.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene01",
+      "frame_idx": 6,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene01_frame_06.jpg",
+      "gt_overlay_file": "0013-handbag3_scene01_frame_06_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene01/00074.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene01/frame_06.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene01",
+      "frame_idx": 7,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene01_frame_07.jpg",
+      "gt_overlay_file": "0013-handbag3_scene01_frame_07_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene01/00085.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene01/frame_07.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene02",
+      "frame_idx": 0,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene02_frame_00.jpg",
+      "gt_overlay_file": "0013-handbag3_scene02_frame_00_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene02/00006.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene02/frame_00.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene02",
+      "frame_idx": 1,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene02_frame_01.jpg",
+      "gt_overlay_file": "0013-handbag3_scene02_frame_01_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene02/00015.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene02/frame_01.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene02",
+      "frame_idx": 2,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene02_frame_02.jpg",
+      "gt_overlay_file": "0013-handbag3_scene02_frame_02_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene02/00024.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene02/frame_02.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene02",
+      "frame_idx": 3,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene02_frame_03.jpg",
+      "gt_overlay_file": "0013-handbag3_scene02_frame_03_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene02/00033.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene02/frame_03.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene02",
+      "frame_idx": 4,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene02_frame_04.jpg",
+      "gt_overlay_file": "0013-handbag3_scene02_frame_04_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene02/00043.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene02/frame_04.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene02",
+      "frame_idx": 5,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene02_frame_05.jpg",
+      "gt_overlay_file": "0013-handbag3_scene02_frame_05_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene02/00052.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene02/frame_05.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene02",
+      "frame_idx": 6,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene02_frame_06.jpg",
+      "gt_overlay_file": "0013-handbag3_scene02_frame_06_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene02/00061.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene02/frame_06.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene02",
+      "frame_idx": 7,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene02_frame_07.jpg",
+      "gt_overlay_file": "0013-handbag3_scene02_frame_07_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene02/00070.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene02/frame_07.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene03",
+      "frame_idx": 0,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene03_frame_00.jpg",
+      "gt_overlay_file": "0013-handbag3_scene03_frame_00_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene03/00016.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene03/frame_00.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene03",
+      "frame_idx": 1,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene03_frame_01.jpg",
+      "gt_overlay_file": "0013-handbag3_scene03_frame_01_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene03/00046.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene03/frame_01.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene03",
+      "frame_idx": 2,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene03_frame_02.jpg",
+      "gt_overlay_file": "0013-handbag3_scene03_frame_02_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene03/00076.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene03/frame_02.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene03",
+      "frame_idx": 3,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene03_frame_03.jpg",
+      "gt_overlay_file": "0013-handbag3_scene03_frame_03_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene03/00106.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene03/frame_03.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene03",
+      "frame_idx": 4,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene03_frame_04.jpg",
+      "gt_overlay_file": "0013-handbag3_scene03_frame_04_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene03/00135.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene03/frame_04.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene03",
+      "frame_idx": 5,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene03_frame_05.jpg",
+      "gt_overlay_file": "0013-handbag3_scene03_frame_05_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene03/00165.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene03/frame_05.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene03",
+      "frame_idx": 6,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene03_frame_06.jpg",
+      "gt_overlay_file": "0013-handbag3_scene03_frame_06_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene03/00195.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene03/frame_06.jpg"
+    },
+    {
+      "stem": "0013-handbag3_scene03",
+      "frame_idx": 7,
+      "category": "handbag",
+      "prompt": "handbag",
+      "frame_file": "0013-handbag3_scene03_frame_07.jpg",
+      "gt_overlay_file": "0013-handbag3_scene03_frame_07_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0013-handbag3_scene03/00225.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0013-handbag3_scene03/frame_07.jpg"
+    },
+    {
+      "stem": "0038-necklace5",
+      "frame_idx": 4,
+      "category": "necklace",
+      "prompt": "necklace",
+      "frame_file": "0038-necklace5_frame_04.jpg",
+      "gt_overlay_file": "0038-necklace5_frame_04_gt_overlay.jpg",
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0038-necklace5/00243.jpg",
+      "source_frame": "/data/liuluyan/sam3/sam3_pvtt_full/frames/0038-necklace5/frame_04.jpg"
+    }
+  ]
+}

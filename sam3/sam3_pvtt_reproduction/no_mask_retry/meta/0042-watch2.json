@@ -1,0 +1,102 @@
+{
+  "video": "0042-watch2",
+  "category": "watch",
+  "scene": null,
+  "prompt": "wristwatch",
+  "video_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/source_videos_100/0042-watch2.mp4",
+  "n_gt_frames": 450,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "time": 0.2084,
+      "gt_frame": 28,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0042-watch2/00029.jpg",
+      "prompt": "wristwatch",
+      "iou": 0.7613,
+      "n_masks": 2,
+      "infer_sec": 0.2,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0042-watch2/frame_00.jpg"
+    },
+    {
+      "frame_idx": 1,
+      "time": 0.6251,
+      "gt_frame": 84,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0042-watch2/00085.jpg",
+      "prompt": "wristwatch",
+      "iou": 0.6845,
+      "n_masks": 2,
+      "infer_sec": 0.199,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0042-watch2/frame_01.jpg"
+    },
+    {
+      "frame_idx": 2,
+      "time": 1.0419,
+      "gt_frame": 140,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0042-watch2/00141.jpg",
+      "prompt": "wristwatch",
+      "iou": 0.5116,
+      "n_masks": 2,
+      "infer_sec": 0.199,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0042-watch2/frame_02.jpg"
+    },
+    {
+      "frame_idx": 3,
+      "time": 1.4586,
+      "gt_frame": 196,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0042-watch2/00197.jpg",
+      "prompt": "wristwatch",
+      "iou": 0.513,
+      "n_masks": 2,
+      "infer_sec": 0.216,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0042-watch2/frame_03.jpg"
+    },
+    {
+      "frame_idx": 4,
+      "time": 1.8754,
+      "gt_frame": 253,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0042-watch2/00254.jpg",
+      "prompt": "wristwatch",
+      "iou": 0.4048,
+      "n_masks": 2,
+      "infer_sec": 0.221,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0042-watch2/frame_04.jpg"
+    },
+    {
+      "frame_idx": 5,
+      "time": 2.2921,
+      "gt_frame": 309,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0042-watch2/00310.jpg",
+      "prompt": "wristwatch",
+      "iou": 0.4849,
+      "n_masks": 3,
+      "infer_sec": 0.221,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0042-watch2/frame_05.jpg"
+    },
+    {
+      "frame_idx": 6,
+      "time": 2.7089,
+      "gt_frame": 365,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0042-watch2/00366.jpg",
+      "prompt": "wristwatch",
+      "iou": 0.5244,
+      "n_masks": 3,
+      "infer_sec": 0.222,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0042-watch2/frame_06.jpg"
+    },
+    {
+      "frame_idx": 7,
+      "time": 3.1256,
+      "gt_frame": 421,
+      "gt_path": "/data/datasets/pvtt_new/pvtt-evaluation/datasets_new/masks/0042-watch2/00422.jpg",
+      "prompt": "wristwatch",
+      "iou": 0.4934,
+      "n_masks": 3,
+      "infer_sec": 0.22,
+      "overlay": "/data/liuluyan/sam3/sam3_pvtt_full/overlays/0042-watch2/frame_07.jpg"
+    }
+  ],
+  "mean_iou": 0.5472374999999999,
+  "median_iou": 0.5123,
+  "n_success": 8,
+  "n_failed": 0
+}
