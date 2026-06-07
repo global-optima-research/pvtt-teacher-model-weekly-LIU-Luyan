@@ -17,7 +17,7 @@
 
 ## 1、核心方法
 
-HuggingGPT 是**"LLM 控制器 + HuggingFace 模型池"**的 4 阶段 pipeline。
+HuggingGPT 是"**LLM 控制器 + HuggingFace 模型池**"的 4 阶段 pipeline。
 
 **阶段一: Task Planning**
 
