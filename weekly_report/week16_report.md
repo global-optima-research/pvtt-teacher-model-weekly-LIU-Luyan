@@ -69,7 +69,7 @@ HuggingGPT 是"**LLM 控制器 + HuggingFace 模型池**"的 4 阶段 pipeline�
 | 2. 三层任务复杂度协议(Task Complexity) | 原论文把任务分为简单、流水线、网状。本项目中把评测集（PVTT）的视频分成三档：<br>● Level 1（单商品孤立展示）：<br>● Level 2（多商品顺序展示）： 简单的镜头切换或平稳旋转（需要自适应采样）。<br>● Level 3（复杂交互）： 人手拿着多条细项链，手指高频遮挡 |
 | 3. 结构化输出与依赖解析(JSON & Dependency) | 本项目同样需要VLM输出一个结构化的JSON工单。时序传播模型（如 Cutie/DEVA）必须等待 SAM3 把关键帧的 Mask 抠出来（生成 `<resource>-0`），拿到这个"输入原材料"之后，传播模型才能开机往后传作业。 |
 | 4. 混合部署策略<br>(Hybrid Endpoint) | VLM（Qwen2.5-VL 本地版，或者用 API 调 GPT-5 / Gemini 3.1 Pro）可以部署在云端或者调用接口，负责输出JSON 表格；而底层的专家模型（SAM2 /Cutie/DEVA/XMem）因为要频繁处理高分辨率视频帧，必须全部部署在服务器显卡上，保证吞吐量。 |
-| 5. 路由质量评估指标(Routing Metrics) | 【不只看分割分，还要考评调度员】<br>不只 report 最终的 J&F 分数，还要用两个新指标证明我设计的 MoE 路由器是聪明的：<br>● DAR（决策一致率）： 我的VLM 输出的工单，去跟"黄金裁判" GPT-5.5 吐出的工单做交并比，看它抄作业抄得准不准。<br>● $\Delta$（路由增量分）： 我的 MoE 综合分，必须显著高出"全盘盲目用 SAM2"或"全盘用 Cutie"的分数。 |
+| 5. 路由质量评估指标(Routing Metrics) | 【不只看分割分，还要考评调度员】<br>不只 report 最终的 J&F 分数，还要用两个新指标证明我设计的 MoE 路由器是聪明的：<br>● DAR（决策一致率）： 我的VLM 输出的工单，去跟"黄金裁判" GPT-5.5 吐出的工单做交并比，看它抄作业抄得准不准。<br>● Δ（路由增量分）： 我的 MoE 综合分，必须显著高出"全盘盲目用 SAM2"或"全盘用 Cutie"的分数。 |
 | 6. 横向对比表设计(Comparison Table) | 左边一列是传统的暴力全视频均匀采样法（如用 GPT-4V 强行看全帧），右边是用 VLM 智能挑帧、动态调用专家的 MoE 架构。横向对比"帧效率（看图张数）"与"细小品类 J&F 得分"，用降维打击的数据撑满工作量。 |
 
 **⚠️消融实验的 4 大局限性**
@@ -100,7 +100,7 @@ HuggingGPT 是"**LLM 控制器 + HuggingFace 模型池**"的 4 阶段 pipeline�
 
 # MoE架构设计
 
-由于我的任务目标是完全固定的（输入电商视频 $\rightarrow$ 输出黑白二值 mask 视频，不涉及其他模态切换），**不需要通用 Agent 里的"任务类型（Task Type）过滤"这一步**。对HuggingGPT 的核心思想进行变通，从以下几个点进行重构：
+由于我的任务目标是完全固定的（输入电商视频 → 输出黑白二值 mask 视频，不涉及其他模态切换），**不需要通用 Agent 里的"任务类型（Task Type）过滤"这一步**。对HuggingGPT 的核心思想进行变通，从以下几个点进行重构：
 
 ## 一、架构映射
 
@@ -232,9 +232,11 @@ HuggingGPT 是"**LLM 控制器 + HuggingFace 模型池**"的 4 阶段 pipeline�
 
 **决策一致性（Decision Alignment Rate, DAR）：** 让最强的闭源模型（如 GPT-5.5-pro）结合人类经验针对 PVTT 数据集制定一套GT Routing。VLM 选的模型组合，跟标准答案选的模型组合，完全重合的比例（比如 100 个视频里选对并指派了 95 个，那就是 95%）。
 
-**端到端获益增量（Routing Gain, $\Delta$）：**
+**端到端获益增量（Routing Gain, Δ）：**
 
-$$\Delta = \mathrm{Mean\ J\&F}_{Ours\ (Routed)} - \max(\mathrm{Mean\ J\&F}_{Single\ Expert})$$
+```math
+\Delta = \text{Mean J\&F}_{\text{Ours (Routed)}} - \max(\text{Mean J\&F}_{\text{Single Expert}})
+```
 
 如果通过 VLM 路由调度的综合得分（J&F 总分），显著超越了全盘使用单模型（如全盘用 SAM2 或全盘用 Cutie）的J&F得分，则定量证明了路由算法的有效性。
 
@@ -242,15 +244,23 @@ $$\Delta = \mathrm{Mean\ J\&F}_{Ours\ (Routed)} - \max(\mathrm{Mean\ J\&F}_{Sing
 
 **仅仅使用全局 J&F 在电商场景下是存在系统性缺陷的。**在前期的分析中已经发现：**大面积物体会严重霸榜并稀释细小结构的得分**（例如细风筝线或细项链完全丢失，总 J 值也只下降 0.5%）。**所以有以下的补充**：
 
-**按物体面积分层的 J&F（Area-Stratified J&F）：** 将商品按首帧所占像素面积划分为：小目标（$<5\%$）、中目标（$5\%\sim20\%$）、大目标（$>20\%$），分别统计。可以重点展现路由在提升小目标（如 Earring 0.237 的惨状）上的逆袭曲线。
+**按物体面积分层的 J&F（Area-Stratified J&F）：** 将商品按首帧所占像素面积划分为：小目标（<5%）、中目标（5%∼20%）、大目标（>20%），分别统计。可以重点展现路由在提升小目标（如 Earring 0.237 的惨状）上的逆袭曲线。
 
-**时序稳定度与面积变动率（TC & $\Delta Area\%$）：**电商视频最忌讳 Mask 边缘闪烁和抖动。Cutie 和 SAM2 在时序稳定性上的差异可以通过这个指标量化，直接支撑"何时路由给 Cutie 做平滑传播"的决策。
+**时序稳定度与面积变动率（TC & ΔArea%）：**电商视频最忌讳 Mask 边缘闪烁和抖动。Cutie 和 SAM2 在时序稳定性上的差异可以通过这个指标量化，直接支撑"何时路由给 Cutie 做平滑传播"的决策。
 
-$$TC = \mathrm{IoU}(\text{前一帧的 Mask},\ \text{后一帧的 Mask})$$
+```math
+TC = \mathrm{IoU}(M_t, M_{t+1})
+```
 
-$$\Delta Area\% = \frac{|\text{当前帧面积} - \text{前一帧面积}|}{\text{前一帧面积}} \times 100\%$$
+其中 $M_t$、$M_{t+1}$ 分别为前一帧与后一帧的 Mask。
 
-**边界加权交并比（Boundary-Weighted IoU, BIoU）：** 对真实边缘扩张 $N$ 个像素的带状区域赋予更高的权重进行计算，专治 SAM2 的记忆膨胀过分割问题。它以真实边界为中心，往内往外各扩张几个像素，计算Mask的交并比。
+```math
+\Delta Area\% = \frac{|A_t - A_{t-1}|}{A_{t-1}} \times 100\%
+```
+
+其中 $A_t$ 为当前帧面积，$A_{t-1}$ 为前一帧面积。
+
+**边界加权交并比（Boundary-Weighted IoU, BIoU）：** 对真实边缘扩张 *N* 个像素的带状区域赋予更高的权重进行计算，专治 SAM2 的记忆膨胀过分割问题。它以真实边界为中心，往内往外各扩张几个像素，计算Mask的交并比。
 
 ## 五、消融实验方案设计（Ablation Study）
 
@@ -281,7 +291,7 @@ $$\Delta Area\% = \frac{|\text{当前帧面积} - \text{前一帧面积}|}{\text
 
 逐一剔除某一个特殊专家（例如：**Minus-DEVA 组**、**Minus-Cutie 组**），然后观察对应垂直品类（如细小链条类、长时序轮播类）的局部指标是否发生灾难性滑坡，从而证明"每一个被选入的专家都有其不可替代的独特价值"。
 
-# Zero-Shot Scene Change Detection（2025） 和Training-Free Spatio-temporal Decoupled Reasoning Video Segmentation with Adaptive Object Memory（2026）
+# Zero-Shot Scene Change Detection（2025） 和 Training-Free Spatio-temporal Decoupled Reasoning Video Segmentation with Adaptive Object Memory（2026）
 
 **流式双轨监测画面变化：** 借用这两篇论文的组合方法来监测商品视频中的画面特征剧变。
 
@@ -289,9 +299,11 @@ $$\Delta Area\% = \frac{|\text{当前帧面积} - \text{前一帧面积}|}{\text
 
 这篇论文的核心思想是"把变化检测看作追踪失败"。它精准定义了什么是 **内容间隙（Content Gap）**——即物体在单帧内发生突发性的消失或出现（手指把项链挡住，或者商品转到背面去）。传播模型（Cutie /SAM2）在往后盲传 Mask的过程中，**每传一定帧数（小于关键帧间隔）**就算出当前帧被追踪出的商品 Mask 面积，与前面关键帧的Mask 面积的比值。
 
-$$\frac{|m_{tracked}^{t+1}|}{|m_{initial}^{t}|} < \tau$$
+```math
+\frac{|m_{tracked}^{t+1}|}{|m_{initial}^{t}|} < \tau
+```
 
-**剧变判定**：如果这个面积比例突然**跌破了你设定的内容阈值 $\tau$**，说明追踪模型在这一帧卡壳了，或者商品被极大地遮挡了。论文实验证明，用这个"面积断崖式萎缩"的指标来抓取突发剧变，在不训练模型的情况下极其灵敏。
+**剧变判定**：如果这个面积比例突然**跌破了你设定的内容阈值 τ**，说明追踪模型在这一帧卡壳了，或者商品被极大地遮挡了。论文实验证明，用这个"面积断崖式萎缩"的指标来抓取突发剧变，在不训练模型的情况下极其灵敏。
 
 ## 2、SDAM：运动驱动采样器（Motion Driven Sampler, MDS）
 
@@ -299,8 +311,8 @@ Zero-Shot SCD 抓遮挡很准，但如果模特是在**疯狂快速晃动商品*
 
 **落地：**
 
-**像素特征比对（Pixel-level Difference）**：把连续的两帧图片输入一个非常轻量的 Pixel Encoder（像素编码器），计算两帧特征图之间的**像素差异度** $D_{i,j}$。
+**像素特征比对（Pixel-level Difference）**：把连续的两帧图片输入一个非常轻量的 Pixel Encoder（像素编码器），计算两帧特征图之间的**像素差异度** $`D_{i,j}`$。
 
-**剧变判定**：如果模特快速摇晃镜头或商品，$D_{i,j}$ 会瞬间拉出一个巨大的波峰。
+**剧变判定**：如果模特快速摇晃镜头或商品，$`D_{i,j}`$ 会瞬间拉出一个巨大的波峰。
 
 论文里为了防止采样的帧太密集，还用了一个高斯正态分布窗口（Normal Distribution）去平衡这个得分，从而在运动剧烈的地方自适应地密集挖出"关键帧候选集"。
