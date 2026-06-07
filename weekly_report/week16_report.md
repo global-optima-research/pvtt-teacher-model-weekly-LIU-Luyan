@@ -64,25 +64,25 @@ HuggingGPT 是"**LLM 控制器 + HuggingFace 模型池**"的 4 阶段 pipeline�
 
 **⚠️消融实验的 4 大局限性**
 
-**VLM填单耗时（VLM Planning Latency）：**
+**(1) VLM填单耗时（VLM Planning Latency）：**
 
 *大白话隐患*：VLM 盯着视频看、思考、再吐出 JSON 派单表，这个过程可能需要耗费 2~3 秒。
 
 主动统计并 report 这个延迟。虽然大脑多花了 3 秒钟来规划，但它帮后面的专家模型省去了几百帧的无效计算，**整体端到端的时间依然是赚的**。
 
-**工单格式报错率（JSON Parsing Instability）：**
+**(2) 工单格式报错率（JSON Parsing Instability）：**
 
 *大白话隐患*：开源小 VLM 偶尔会发疯，吐出的 JSON 表格漏了括号或者写错字段，导致你的 Python 流水线代码直接崩掉。
 
 在消融实验中 report 失败率。比如："在 98 个电商视频中，Qwen2.5-VL 的格式正确率为 96.8%，遇到报错时系统会自动触发 Fallback（退回固定单模型基准）。"
 
-**细小目标漏认率（Fine-grained Detail Leakage）：**
+**(3) 细小目标漏认率（Fine-grained Detail Leakage）：**
 
 *大白话隐患*：视频里，如果耳环被头发遮挡了很久，VLM可能在第一阶段"粗看一眼"时漏掉这个商品。
 
 这就是为什么要用 **Gemini 3.5 flash** 或**GPT-5.5** 的原因，并在论文里明确指出："得益于新一代 VLM 强大的时序长文本视觉抓取能力，细小长尾品类的漏认率从老一代模型的 15% 降低到了 2%。"
 
-**Token 长度限制与算力成本（Token Length & Cost）：**
+**(4) Token 长度限制与算力成本（Token Length & Cost）：**
 
 *大白话隐患*：如果电商视频长达几分钟，每一帧都转成文字塞给大模型，Token 消耗太恐怖了。
 
